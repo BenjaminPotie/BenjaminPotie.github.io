@@ -257,6 +257,7 @@ padding-left: 10px;
         url(../img/FooterShape.svg) no-repeat left 0 bottom 0;
     }
 }
+/* --------------------------------  730PX -> 980PX -------------------------------- */
 @media all and (min-width: 730px) and (max-width: 980px) {
     main {
         max-width: 700px;
@@ -270,9 +271,11 @@ padding-left: 10px;
         width: 90%;
     }
 }
+/* --------------------------------  420PX -> 730PX -------------------------------- */
 @media all and (min-width: 420px) and (max-width: 730px) {
 
 }
+/* --------------------------------  SCREEN < 420PX -------------------------------- */
 @media all and (max-width: 420px) {
     
 }
