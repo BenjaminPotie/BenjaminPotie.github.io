@@ -42,7 +42,7 @@ for (var i=0; i<img.length; i++) {
 function myMouseOver (event) {
     event.stopPropagation();
     var image = event.target.querySelector("img");
-    image.style.opacity = "5%";
+    image.style.opacity = "0.05";
 
     var texte = event.target.querySelector(".txt");
     texte.style.display ="block";
@@ -51,7 +51,7 @@ function myMouseOver (event) {
 function myMouseOut (event) {
     event.stopPropagation();
     var image = event.target.querySelector("img");
-    image.style.opacity = "100%";
+    image.style.opacity = "1";
 
     var texte = event.target.querySelector(".txt");
     texte.style.display ="none";
