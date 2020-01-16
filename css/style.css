@@ -22,7 +22,7 @@ a {
     height: 40px;
     border: 3px solid #202020;
     border-radius: 50%;
-    position: absolute;
+    /* position: absolute; */
     transition-duration: 100ms;
 }
 
@@ -113,6 +113,7 @@ font-weight: 700;
 /* -------------------------------- IMG + TXT ------------------------------- */
 .works {
     margin-top: 180px;
+
 }
 section {
     margin-top: 70px;
@@ -173,7 +174,10 @@ footer {
     transition: .5s;
     margin: 0 20px;
 }
-.social a:hover {
+.social a i{
+    z-index:-5;
+}
+.social a:hover i {
     color: #FFF;
 }
 

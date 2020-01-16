@@ -1,10 +1,26 @@
 /* --------------------------------- CURSOR --------------------------------- */
-const cursor = document.querySelector(".cursor");
+
+
+// document.addEventListener("mousemove", e => {
+//     cursor.setAttribute("style", "top: "+(e.pageY-20)+"px; left: "+(e.pageX-20)+"px;");
+// })
 const dot = document.querySelector(".dot");
 
-document.addEventListener("mousemove", e => {
-    cursor.setAttribute("style", "top: "+(e.pageY-20)+"px; left: "+(e.pageX-20)+"px;");
-})
+const initCursor = () => {
+    const cursor = document.querySelector(".cursor");
+    let clientX, clientY;
+    document.addEventListener("mousemove", e => {
+        clientX = e.pageX;
+        clientY = e.pageY;
+    });
+    const render = () => {
+        cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+        requestAnimationFrame(render);
+    };
+    requestAnimationFrame(render);
+}
+initCursor();
+
 var links = document.querySelectorAll("a");
 
 for (var i=0; i<links.length; i++) {
@@ -21,27 +37,27 @@ for (var i=0; i<links.length; i++) {
 }
 
 /* -------------------------------- IMG + TXT ------------------------------- */
-var img = document.querySelectorAll(".container a");
+// var img = document.querySelectorAll(".container a");
 
-for (var i=0; i<img.length; i++) {
-    img[i].addEventListener("mouseenter", myMouseOver);
-    img[i].addEventListener("mouseleave", myMouseOut);
-}
+// for (var i=0; i<img.length; i++) {
+//     img[i].addEventListener("mouseenter", myMouseOver);
+//     img[i].addEventListener("mouseleave", myMouseOut);
+// }
 
-function myMouseOver (event) {
-    event.stopPropagation();
-    var image = event.target.querySelector("img");
-    image.style.opacity = "5%";
+// function myMouseOver (event) {
+//     event.stopPropagation();
+//     var image = event.target.querySelector("img");
+//     image.style.opacity = "5%";
 
-    var texte = event.target.querySelector(".txt");
-    texte.style.display ="block";
-}
+//     var texte = event.target.querySelector(".txt");
+//     texte.style.display ="block";
+// }
 
-function myMouseOut (event) {
-    event.stopPropagation();
-    var image = event.target.querySelector("img");
-    image.style.opacity = "100%";
+// function myMouseOut (event) {
+//     event.stopPropagation();
+//     var image = event.target.querySelector("img");
+//     image.style.opacity = "100%";
 
-    var texte = event.target.querySelector(".txt");
-    texte.style.display ="none";
-}
+//     var texte = event.target.querySelector(".txt");
+//     texte.style.display ="none";
+// }
