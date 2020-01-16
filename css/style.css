@@ -98,7 +98,8 @@ font-weight: 700;
     z-index: 10;
 }
 .menu a:hover {
-    opacity: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 .menu li {
     font-weight: 600;
