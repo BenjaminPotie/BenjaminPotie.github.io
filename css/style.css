@@ -1,0 +1,222 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+body {
+    background: url(../img/Vector01.svg) no-repeat right 0 top 0,
+    url(../img/Vector02.svg) no-repeat 0 650px,
+    url(../img/Vector03.svg) no-repeat right -50px top 1200px,
+    url(../img/Vector\ 04.svg) no-repeat 100px 1900px,
+    url(../img/FooterShape.svg) no-repeat left 0 bottom 0;
+    cursor: none;
+}
+a {
+    cursor: none;
+}
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #202020;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 100ms;
+}
+
+.dot {
+    border: 3px solid #202020;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    transition: .3s;
+}
+main {
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+header {
+    position: fixed;
+    width: 960px;
+    top: 80px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------------------------- INTRO --------------------------------- */
+.intro {
+    position: relative;
+}
+.intro img {
+    width: 80px;
+}
+.intro a {
+    text-decoration: none;
+    color: #202020;
+}
+.intro h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 20px;
+    transform: rotate(-90deg);
+    text-align: right;
+    position: absolute;
+    top: 150px;
+    left: -35px;
+}
+.intro span {
+font-size: 16px;
+font-weight: 700;
+}
+
+/* ---------------------------------- MENU ---------------------------------- */
+.menu {
+    width: 0;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(-90deg);
+}
+.menu a {
+    text-decoration: none;
+    color: #202020;
+    transition: .5s;
+    opacity: 50%;
+    background-color: red;
+}
+.menu a:hover {
+    opacity: 100%;
+}
+.menu li {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    WORKS                                   */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- IMG + TXT ------------------------------- */
+.works {
+    margin-top: 180px;
+}
+section {
+    margin-top: 70px;
+}
+section img {
+    width: 75%;
+}
+.container {
+    text-align: center;
+    position: relative;
+}
+.container a {
+    color: #202020;
+}
+.txt {
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+.txt h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.txt h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
+}
+.txt p {
+    font-weight: 300;
+    line-height: 130%;
+}
+.txt span {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+    margin-top: 190px;
+}
+/* --------------------------------- SOCIAL --------------------------------- */
+.social {
+    text-align: center;
+    font-size: 70px;
+    margin: 80px 0 20px 0;
+}
+.social a {
+    color: #202020;
+    transition: .5s;
+    margin: 0 20px;
+}
+.social a:hover {
+    color: #FFF;
+}
+
+/* --------------------------------- CONTACT --------------------------------- */
+.contact a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #202020;
+    font-size: 12px;
+}
+.contact i {
+    margin-right: 10px;
+}
+.contact {
+    line-height: 0%;
+}
+
+/* --------------------------------- LOGO --------------------------------- */
+.logo {
+    display: flex;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 300;
+}
+.logo span {
+    font-weight: 700;
+}
+.logo img {
+width: 40px;
+padding-left: 10px;
+}
+
+/* --------------------------------- COPYRIGHT --------------------------------- */
+.copyright {
+    font-size: 12px;
+}
+
+/* --------------------------------- FOOTERLINE --------------------------------- */
+.footerline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
