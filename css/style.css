@@ -12,9 +12,9 @@ body {
     url(../img/Vector03.svg) no-repeat right -50px top 1200px,
     url(../img/Vector\ 04.svg) no-repeat 100px 1900px,
     url(../img/FooterShape.svg) no-repeat left 0 bottom 0;
-    /* cursor: none; */
+    cursor: none;
 }
-/* a {
+a {
     cursor: none;
 }
 .cursor {
@@ -32,7 +32,7 @@ body {
     top: 14px;
     left: 14px;
     transition: .3s;
-} */
+}
 main {
     max-width: 960px;
     margin: auto;
