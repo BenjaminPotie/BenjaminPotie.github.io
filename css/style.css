@@ -99,6 +99,7 @@ font-weight: 700;
 }
 .menu a:hover {
     opacity: 1;
+    visibility: hidden;
 }
 .menu li {
     font-weight: 600;
