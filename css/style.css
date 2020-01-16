@@ -81,18 +81,20 @@ font-weight: 700;
 /* ---------------------------------- MENU ---------------------------------- */
 .menu {
     width: 0;
-    z-index: 15;
 }
 .menu ul{
     display: flex;
     justify-content: flex-end;
     transform: rotate(-90deg);
+    z-index: 10;
+    position: relative;
 }
 .menu a {
     text-decoration: none;
     color: #202020;
     transition: .5s;
     opacity: 50%;
+    z-index: 10;
 }
 .menu a:hover {
     opacity: 100%;
