@@ -94,7 +94,7 @@ font-weight: 700;
     color: #202020;
     transition: .5s;
     opacity: 50%;
-    background-color: red;
+    background-color: blue;
 }
 .menu a:hover {
     opacity: 100%;
