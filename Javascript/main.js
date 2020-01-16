@@ -14,7 +14,7 @@ const initCursor = () => {
         clientY = e.pageY;
     });
     const render = () => {
-        cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+        cursor.style.transform = `translate(${clientX-20}px, ${clientY-20}px)`;
         requestAnimationFrame(render);
     };
     requestAnimationFrame(render);
@@ -37,27 +37,27 @@ for (var i=0; i<links.length; i++) {
 }
 
 /* -------------------------------- IMG + TXT ------------------------------- */
-// var img = document.querySelectorAll(".container a");
+var img = document.querySelectorAll(".container a");
 
-// for (var i=0; i<img.length; i++) {
-//     img[i].addEventListener("mouseenter", myMouseOver);
-//     img[i].addEventListener("mouseleave", myMouseOut);
-// }
+for (var i=0; i<img.length; i++) {
+    img[i].addEventListener("mouseenter", myMouseOver);
+    img[i].addEventListener("mouseleave", myMouseOut);
+}
 
-// function myMouseOver (event) {
-//     event.stopPropagation();
-//     var image = event.target.querySelector("img");
-//     image.style.opacity = "5%";
+function myMouseOver (event) {
+    event.stopPropagation();
+    var image = event.target.querySelector("img");
+    image.style.opacity = "5%";
 
-//     var texte = event.target.querySelector(".txt");
-//     texte.style.display ="block";
-// }
+    var texte = event.target.querySelector(".txt");
+    texte.style.display ="block";
+}
 
-// function myMouseOut (event) {
-//     event.stopPropagation();
-//     var image = event.target.querySelector("img");
-//     image.style.opacity = "100%";
+function myMouseOut (event) {
+    event.stopPropagation();
+    var image = event.target.querySelector("img");
+    image.style.opacity = "100%";
 
-//     var texte = event.target.querySelector(".txt");
-//     texte.style.display ="none";
-// }
+    var texte = event.target.querySelector(".txt");
+    texte.style.display ="none";
+}

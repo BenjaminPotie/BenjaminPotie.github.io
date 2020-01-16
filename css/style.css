@@ -22,10 +22,9 @@ a {
     height: 40px;
     border: 3px solid #202020;
     border-radius: 50%;
-    /* position: absolute; */
+    z-index: 1000;
     transition-duration: 100ms;
 }
-
 .dot {
     border: 3px solid #202020;
     border-radius: 50%;
@@ -54,11 +53,10 @@ nav {
 }
 
 /* ---------------------------------- INTRO --------------------------------- */
-.intro {
-    position: relative;
-}
 .intro img {
     width: 80px;
+    position: relative;
+    z-index: -6;
 }
 .intro a {
     text-decoration: none;
@@ -83,6 +81,7 @@ font-weight: 700;
 /* ---------------------------------- MENU ---------------------------------- */
 .menu {
     width: 0;
+    z-index: 15;
 }
 .menu ul{
     display: flex;
@@ -94,7 +93,6 @@ font-weight: 700;
     color: #202020;
     transition: .5s;
     opacity: 50%;
-    background-color: blue;
 }
 .menu a:hover {
     opacity: 100%;
@@ -113,13 +111,14 @@ font-weight: 700;
 /* -------------------------------- IMG + TXT ------------------------------- */
 .works {
     margin-top: 180px;
-
 }
 section {
     margin-top: 70px;
 }
 section img {
-    width: 75%;
+    width: 100%;
+    z-index: -2;
+    position: relative;
 }
 .container {
     text-align: center;
@@ -127,6 +126,9 @@ section img {
 }
 .container a {
     color: #202020;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
 }
 .txt {
     width: 550px;
@@ -171,14 +173,14 @@ footer {
 }
 .social a {
     color: #202020;
-    transition: .5s;
     margin: 0 20px;
-}
-.social a i{
-    z-index:-5;
+    z-index: -5;
 }
 .social a:hover i {
+    transition: .5s;
     color: #FFF;
+    z-index: -4;
+    position: relative;
 }
 
 /* --------------------------------- CONTACT --------------------------------- */
@@ -223,4 +225,21 @@ padding-left: 10px;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIAQUERIES                                */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------  SCREEN > 1024PX -------------------------------- */
+@media all and (min-width: 1300px) {
+    main {
+        max-width: 1250px;
+    }
+    header {
+        max-width: 1250px;
+    }
+    section img {
+        width: 10%;
+    }
 }
