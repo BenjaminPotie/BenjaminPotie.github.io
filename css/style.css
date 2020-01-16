@@ -94,7 +94,7 @@ font-weight: 700;
     color: #202020;
     transition: .5s;
     opacity: 0.5;
-    filter: alpha(opacity=50);
+    visibility: visible;
     z-index: 10;
 }
 .menu a:hover {
