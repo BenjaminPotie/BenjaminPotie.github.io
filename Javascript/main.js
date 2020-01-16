@@ -1,40 +1,35 @@
 /* --------------------------------- CURSOR --------------------------------- */
+// const dot = document.querySelector(".dot");
 
+// const initCursor = () => {
+//     const cursor = document.querySelector(".cursor");
+//     let clientX, clientY;
+//     document.addEventListener("mousemove", e => {
+//         clientX = e.pageX;
+//         clientY = e.pageY;
+//     });
+//     const render = () => {
+//         cursor.style.transform = `translate(${clientX-20}px, ${clientY-20}px)`;
+//         requestAnimationFrame(render);
+//     };
+//     requestAnimationFrame(render);
+// }
+// initCursor();
 
-// document.addEventListener("mousemove", e => {
-//     cursor.setAttribute("style", "top: "+(e.pageY-20)+"px; left: "+(e.pageX-20)+"px;");
-// })
-const dot = document.querySelector(".dot");
+// var links = document.querySelectorAll("a");
 
-const initCursor = () => {
-    const cursor = document.querySelector(".cursor");
-    let clientX, clientY;
-    document.addEventListener("mousemove", e => {
-        clientX = e.pageX;
-        clientY = e.pageY;
-    });
-    const render = () => {
-        cursor.style.transform = `translate(${clientX-20}px, ${clientY-20}px)`;
-        requestAnimationFrame(render);
-    };
-    requestAnimationFrame(render);
-}
-initCursor();
-
-var links = document.querySelectorAll("a");
-
-for (var i=0; i<links.length; i++) {
-    links[i].addEventListener("mouseenter", e => {
-            dot.style.border="15px solid #2020203a";
-            dot.style.top="2px";
-            dot.style.left="2px";
-        });
-    links[i].addEventListener("mouseleave", e => {
-        dot.style.border="3px solid #202020";
-        dot.style.top="14px";
-        dot.style.left="14px";
-        });
-}
+// for (var i=0; i<links.length; i++) {
+//     links[i].addEventListener("mouseenter", e => {
+//             dot.style.border="15px solid #2020203a";
+//             dot.style.top="2px";
+//             dot.style.left="2px";
+//         });
+//     links[i].addEventListener("mouseleave", e => {
+//         dot.style.border="3px solid #202020";
+//         dot.style.top="14px";
+//         dot.style.left="14px";
+//         });
+// }
 
 /* -------------------------------- IMG + TXT ------------------------------- */
 var img = document.querySelectorAll(".container a");
