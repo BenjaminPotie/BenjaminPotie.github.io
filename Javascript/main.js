@@ -13,27 +13,27 @@ function followMouse(e){
 }
 
 /* -------------------------------- IMG + TXT ------------------------------- */
-var img = document.querySelectorAll(".container a");
+// var img = document.querySelectorAll(".container a");
 
-for (var i=0; i<img.length; i++) {
-    img[i].addEventListener("mouseenter", myMouseOver);
-    img[i].addEventListener("mouseleave", myMouseOut);
-}
+// for (var i=0; i<img.length; i++) {
+//     img[i].addEventListener("mouseenter", myMouseOver);
+//     img[i].addEventListener("mouseleave", myMouseOut);
+// }
 
-function myMouseOver (event) {
-    event.stopPropagation();
-    var image = event.target.querySelector("img");
-    image.style.opacity = "0.05";
+// function myMouseOver (event) {
+//     event.stopPropagation();
+//     var image = event.target.querySelector("img");
+//     image.style.opacity = "0.05";
 
-    var texte = event.target.querySelector(".txt");
-    texte.style.display ="block";
-}
+//     var texte = event.target.querySelector(".txt");
+//     texte.style.display ="block";
+// }
 
-function myMouseOut (event) {
-    event.stopPropagation();
-    var image = event.target.querySelector("img");
-    image.style.opacity = "1";
+// function myMouseOut (event) {
+//     event.stopPropagation();
+//     var image = event.target.querySelector("img");
+//     image.style.opacity = "1";
 
-    var texte = event.target.querySelector(".txt");
-    texte.style.display ="none";
-}
+//     var texte = event.target.querySelector(".txt");
+//     texte.style.display ="none";
+// }

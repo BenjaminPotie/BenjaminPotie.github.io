@@ -19,7 +19,7 @@ a {
 }
 .circle{
     border-radius:50%;
-     z-index:99999;
+    z-index:99999;
     position:fixed;
     transition:all 100ms ease-out;
     width:40px;
@@ -28,6 +28,7 @@ a {
     top:-23px;
     left:-23px;  
     pointer-events:none;
+    background: url(../img/dotCursor.svg);
 }
 .circleH{
     background: #2020207a;
@@ -85,7 +86,6 @@ font-weight: 700;
 
 /* ---------------------------------- MENU ---------------------------------- */
 .menu{
-
     display: flex;
     margin-top:20px;  
 }
@@ -118,8 +118,10 @@ section {
 }
 section img {
     width: 100%;
-    z-index: -2;
-    position: relative;
+}
+section img:hover {
+    opacity: 0.05;
+    transition: .3s;
 }
 .container {
     text-align: center;
@@ -128,7 +130,7 @@ section img {
 .container a {
     color: #202020;
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .txt {
@@ -157,14 +159,15 @@ section img {
 }
 .txt span {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
-
+.works .box:last-child {
+    margin-bottom: 200px;
+}
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
 footer {
-    margin-top: 190px;
     width: 970px;
     margin: auto;
 }
