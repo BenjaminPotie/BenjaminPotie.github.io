@@ -12,10 +12,10 @@ body {
     url(../img/Vector03.svg) no-repeat right -50px top 1200px,
     url(../img/Vector\ 04.svg) no-repeat 100px 1900px,
     url(../img/FooterShape.svg) no-repeat left 0 bottom 0;
-    cursor: none;
+    curs-or: none;
 }
 a {
-    cursor: none;
+    curs-or: none;
 }
 .cursor {
     width: 40px;
@@ -24,15 +24,33 @@ a {
     border-radius: 50%;
     z-index: 1000;
     transition-duration: 100ms;
+    position:fixed;
+    /* top: -15px;
+    left: -15px; */
 }
 .dot {
     border: 3px solid #202020;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 14px;
     left: 14px;
     transition: .3s;
 }
+.circle{
+    border-radius:50%;
+    z-index:99999;
+    position:fixed;
+    transition:all .5s ease-out;
+    width:70px;
+    height:70px;
+    border:1px solid red;
+    top:-32.5px;
+    left:-32.5px;
+
+}
+
+
+
 main {
     max-width: 960px;
     margin: auto;
@@ -46,10 +64,6 @@ header {
     position: fixed;
     width: 960px;
     top: 80px;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
 }
 
 /* ---------------------------------- INTRO --------------------------------- */
@@ -81,10 +95,11 @@ font-weight: 700;
 /* ---------------------------------- MENU ---------------------------------- */
 .menu {
     width: 0;
+    margin-top: 450px;
+    margin-left: 10px;
 }
 .menu ul{
     display: flex;
-    justify-content: flex-end;
     transform: rotate(-90deg);
     z-index: 10;
     position: relative;
@@ -104,7 +119,7 @@ font-weight: 700;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -112,9 +127,6 @@ font-weight: 700;
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------- IMG + TXT ------------------------------- */
-.works {
-    margin-top: 180px;
-}
 section {
     margin-top: 70px;
 }
@@ -167,6 +179,8 @@ section img {
 /* -------------------------------------------------------------------------- */
 footer {
     margin-top: 190px;
+    width: 970px;
+    margin: auto;
 }
 /* --------------------------------- SOCIAL --------------------------------- */
 .social {
@@ -247,16 +261,9 @@ padding-left: 10px;
     section img {
         width: 100%;
     }
-    body {
-        background: url(../img/Vector01.svg) no-repeat right 0 top 0,
-        url(../img/Vector02.svg) no-repeat 0 900px,
-        url(../img/Vector03.svg) no-repeat right -50px top 1700px,
-        url(../img/Vector\ 04.svg) no-repeat 100px 2500px,
-        url(../img/FooterShape.svg) no-repeat left 0 bottom 0;
-    }
 }
-/* --------------------------------  825PX -> 980PX -------------------------------- */
-@media all and (min-width: 825px) and (max-width: 980px) {
+/* --------------------------------  850PX -> 1024PX -------------------------------- */
+@media all and (min-width: 850px) and (max-width: 1024px) {
     main {
         max-width: 800px;
     }
@@ -269,8 +276,8 @@ padding-left: 10px;
         width: 100%;
     }
 }
-/* --------------------------------  725PX -> 825PX -------------------------------- */
-@media all and (min-width: 725px) and (max-width: 825px) {
+/* --------------------------------  750PX -> 850PX -------------------------------- */
+@media all and (min-width: 750px) and (max-width: 850px) {
     main {
         max-width: 700px;
     }
@@ -283,8 +290,8 @@ padding-left: 10px;
         width: 90%;
     }
 }
-/* --------------------------------  625PX -> 725PX -------------------------------- */
-@media all and (min-width: 625px) and (max-width: 725px) {
+/* --------------------------------  650PX -> 750PX -------------------------------- */
+@media all and (min-width: 650px) and (max-width: 750px) {
     main {
         max-width: 600px;
     }
@@ -297,8 +304,8 @@ padding-left: 10px;
         width: 80%;
     }
 }
-/* --------------------------------  525PX -> 625PX -------------------------------- */
-@media all and (min-width: 525px) and (max-width: 625px) {
+/* --------------------------------  550PX -> 650PX -------------------------------- */
+@media all and (min-width: 550px) and (max-width: 650px) {
     main {
         max-width: 500px;
     }
@@ -311,7 +318,8 @@ padding-left: 10px;
         width: 70%;
     }
 }
-/* --------------------------------  425PX -> 525PX -------------------------------- */
-@media all and (max-width: 425px) {
+/* --------------------------------  450PX -> 550PX -------------------------------- */
+@media all and (max-width: 450px) {
 
 }
+
