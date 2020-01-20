@@ -94,12 +94,10 @@ font-weight: 700;
     color: #202020;
     transition: .5s;
     opacity: 0.5;
-    visibility: visible;
     z-index: 10;
 }
 .menu a:hover {
     opacity: 1;
-    visibility: visible;
     z-index: 10;
 }
 .menu li {
@@ -257,8 +255,22 @@ padding-left: 10px;
         url(../img/FooterShape.svg) no-repeat left 0 bottom 0;
     }
 }
-/* --------------------------------  730PX -> 980PX -------------------------------- */
-@media all and (min-width: 730px) and (max-width: 980px) {
+/* --------------------------------  825PX -> 980PX -------------------------------- */
+@media all and (min-width: 825px) and (max-width: 980px) {
+    main {
+        max-width: 800px;
+    }
+    header {
+        position: fixed;
+        width: 800px;
+        top: 80px;
+    }
+    section img {
+        width: 100%;
+    }
+}
+/* --------------------------------  725PX -> 825PX -------------------------------- */
+@media all and (min-width: 725px) and (max-width: 825px) {
     main {
         max-width: 700px;
     }
@@ -271,11 +283,35 @@ padding-left: 10px;
         width: 90%;
     }
 }
-/* --------------------------------  420PX -> 730PX -------------------------------- */
-@media all and (min-width: 420px) and (max-width: 730px) {
-
+/* --------------------------------  625PX -> 725PX -------------------------------- */
+@media all and (min-width: 625px) and (max-width: 725px) {
+    main {
+        max-width: 600px;
+    }
+    header {
+        position: fixed;
+        width: 600px;
+        top: 80px;
+    }
+    section img {
+        width: 80%;
+    }
 }
-/* --------------------------------  SCREEN < 420PX -------------------------------- */
-@media all and (max-width: 420px) {
-    
+/* --------------------------------  525PX -> 625PX -------------------------------- */
+@media all and (min-width: 525px) and (max-width: 625px) {
+    main {
+        max-width: 500px;
+    }
+    header {
+        position: fixed;
+        width: 500px;
+        top: 80px;
+    }
+    section img {
+        width: 70%;
+    }
+}
+/* --------------------------------  425PX -> 525PX -------------------------------- */
+@media all and (max-width: 425px) {
+
 }
