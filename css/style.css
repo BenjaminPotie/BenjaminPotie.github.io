@@ -2,6 +2,7 @@ html {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:after, *:before {
     box-sizing: inherit;
@@ -32,6 +33,15 @@ a {
 }
 .circleH{
     background: #2020207a;
+    transition: background .5s;
+}
+::selection {
+    background: #2020205e;
+    color: white;
+}
+::-moz-selection {
+    background: #2020205e;
+    color: white;
 }
 main {
     max-width: 960px;
@@ -92,7 +102,7 @@ font-weight: 700;
 .menu a {
     text-decoration: none;
     color: #202020;
-    transition: .7s;
+    transition: .5s;
     opacity: 0.5;
     z-index: 1000;
 }
@@ -170,6 +180,9 @@ section img {
 .txt span {
     text-transform: uppercase;
     font-weight: 700;
+}
+.discover {
+    text-transform: uppercase;
 }
 .works .box:last-child {
     margin-bottom: 200px;

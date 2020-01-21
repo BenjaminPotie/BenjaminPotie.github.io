@@ -1,3 +1,4 @@
+const $ = document.querySelector.bind(document);
 /* --------------------------------- CURSOR --------------------------------- */
 const follow = document.querySelector(".circle");
 
@@ -11,3 +12,4 @@ function followMouse(e){
         follow.classList.remove('circleH');
     }
 }
+document.body.innerHTML = navigator.appVersion;
