@@ -12,3 +12,4 @@ function followMouse(e){
         follow.classList.remove('circleH');
     }
 }
+document.body.innerHTML = navigator.userAgent;
