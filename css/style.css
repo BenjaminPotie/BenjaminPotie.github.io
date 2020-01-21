@@ -92,7 +92,7 @@ font-weight: 700;
 .menu a {
     text-decoration: none;
     color: #202020;
-    transition: .5s;
+    transition: .7s;
     opacity: 0.5;
     z-index: 1000;
 }
@@ -118,20 +118,28 @@ section {
 }
 section img {
     width: 100%;
-}
-section img:hover {
-    opacity: 0.05;
-    transition: .3s;
+    transition: .5s;
 }
 .container {
     text-align: center;
     position: relative;
 }
+.container:hover img {
+    opacity: 0.05;
+}
 .container a {
     color: #202020;
     display: block;
+    height: 100%;
     width: 100%;
-    margin: 0 auto;
+    position: absolute;
+    margin: auto;
+    z-index: 10;
+    text-indent: -99999px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 .txt {
     width: 550px;
@@ -139,8 +147,10 @@ section img:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     display: none;
+}
+.container:hover .txt {
+    display: block;
 }
 .txt h2 {
     text-transform: uppercase;
@@ -236,6 +246,3 @@ padding-left: 10px;
 /* -------------------------------------------------------------------------- */
 /*                                MEDIAQUERIES                                */
 /* -------------------------------------------------------------------------- */
-
-
-
